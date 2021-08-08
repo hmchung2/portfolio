@@ -89,9 +89,9 @@ header .navbar ul li a:hover::before{
 }
 .home{
 	min-height: 100vh;
-	background-image: url("images/home-bg.jpg");
+	background-image: url("images/field-trip.jpeg");
 	background-size: cover;
-	background-position: center;
+	background-position: bottom;
 	float: left;
 	width: 100%;
 	padding:0px 15px;

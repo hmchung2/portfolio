@@ -5,13 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css"/>
 </head>
+<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+
+
+  })
+
+</script>
+
+<style>
+.social-icons .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+.social-icons .social-icon:last-child {
+  margin-right: 0;
+}
+.social-icons .social-icon:hover {
+  background-color: #bd5d38;
+}
+.fa-youtube {
+  color: white;
+}
+.fa-github{
+  color: white;
+}
+
+.services .card .box {
+  height: 350px;
+}
+
+.fa-phone{
+  color:orange;
+}
+.fa-envelope{
+  color:orange;
+}
+.portfolio-content img{
+  width:300px;
+  height:250px;
+}
+
+.portfolio-content h3{
+  height:130px;
+
+}
+</style>
+
+
 <body>
 
   <!-- Start Header -->
    <header>
    	  <div class="container">
    	  	  <div class="logo">
-   	  	  	  <a href=""><span>정</span>해명</a>
+   	  	  	  <a href="">포트폴리오</a>
    	  	  </div>
    	  	  <div class="trigger-main">
    	  	  	 <a href="javascript:void(0);" class="ham-burger">
@@ -23,10 +82,10 @@
    	  	  	  <ul>
    	  	  	  	  <li><a href="#home" class="active">홈</a></li>
    	  	  	  	  <li><a href="#about">소개</a></li>
-   	  	  	  	  <li><a href="#services">서버 및 분석 능력</a></li>
-                  <li><a href="#skillez">코딩 스킬</a></li>
-   	  	  	  	  <li><a href="#portfolio">증명 서류</a></li>
-   	  	  	  	  <li><a href="#team">공모전 내 역활 요약</a></li>
+   	  	  	  	  <li><a href="#services">사용 기술</a></li>
+                  <li><a href="#skillez">언어별 프로그래밍 능력</a></li>
+   	  	  	  	  <li><a href="#portfolio">프로젝트</a></li>
+   	  	  	  	  <li><a href="#team">증명 서류</a></li>
 
    	  	  	  </ul>
    	  	  </div>
@@ -38,8 +97,14 @@
     <section class="home" id="home">
        <div class="container">
        	   <div class="home-text">
-       	   	     <h1>안녕하세요 정해명 입니다</h1>
-       	   	     <h3>Data Scientist</h3>
+       	   	     <h1>FullStack Developer</h1>
+       	   	     <h3>정해명</h3>
+                 <br>
+                 <div class="social-icons">
+                    <a class="social-icon" href="https://www.youtube.com/channel/UC71kfEJOuSI7aK0CmdXn-0Q"><i class="fab fa-youtube"></i></a>
+                    <a class="social-icon" href="https://github.com/hmchung2"><i class="fab fa-github"></i></a>
+                    <a class="social-icon" href="https://hmchung2devjava.tistory.com/"> <img src="images/tistory.png" style="width:20px; height:20px;"></a>
+                </div>
 
        	   </div>
        </div>
@@ -52,14 +117,12 @@
        	  <h2 class="title">소개</h2>
        	  <div class="about-content">
        	  	  <div class="img">
-       	  	  	 <img src="images/about-me.jpg" alt="me">
+       	  	  	 <img src="images/hiking.jpg" alt="me">
        	  	  </div>
        	  	  <div class="description">
-                  <h5>안녕하세요~ 정해명 입니다.</h5>
-                  <h4>(빅데이터 전문) 데이터 분석가 입니다.</h4>
-                  <a class = mygp href=https://github.com/hmchung2/hmchung_github.git>내 깃헙 페이지: <u> github.com/hmchung2/hmchung_github.git  (클릭) </u> </a>
+                  <h5>안녕하세요.</h5>
 
-                  <ul>
+                  <!-- <ul>
                     <li class ="hm">UCLA 대학교 통계학 + 심리학 2019년에 졸업</li>
                     <li class="hm"> 한양대학교 빅데이터 분석가 양성과정 + 대회 2위 장려상 </li>
                     <li class ="hm" spellcheck="value">2019 서울시 빅데이터 공모전 우수상 2위 (팀명:따릉따릉, AWS에서 플랫폼 구축) </li>
@@ -73,7 +136,28 @@
        	  	  	  <p>UCLA 에서 통계학/심리학을 전공해서 코딩 뿐만 아니라 알고리즘의 수학적 원리 까지 뿌리 깊게 공부했습니다.</p>
        	  	  	  <p>졸업 후 한양대 빅데이터 분석가 양성과정에서 배운 서버 구축 능력도 높습니다. 특히 스파크를 활용한 플룸, 카프카, HDFS를 집중적으로 배웠습니다.</p>
                   <p>팀장으로 서울시 빅데이터 공모전에 참가해서 플랫폼 직접 구축하고 분석까지 해서 우수상을 탔습니다.</p>
-                  <p>양성과정 직후 빅데이터 와 딥러닝을 기반으로 운영하는 T3Q 라는 회사에서 인턴으로 시작해서 지금은 정직원으로 재직중 입니다. 현재는 자연어 관련 R&D 부서에서 개발 하고 있습니다.</p>
+                  <p>양성과정 직후 빅데이터 와 딥러닝을 기반으로 운영하는 T3Q 라는 회사에서 인턴으로 시작해서 지금은 정직원으로 재직중 입니다. 현재는 자연어 관련 R&D 부서에서 개발 하고 있습니다.</p> -->
+                <h4 style="margin-bottom:0px; margin-top:10px;">History</h4>
+                <p style="margin-top:0px;">
+                  대학 시절 통계학과 기계학습을 배우면서 프로그래밍을 시작했습니다. 졸업 이후 빅데이터 공모전 등 다양한 프로젝트를 참여해서 수상 했습니다. 더 나아가 빅데이터 인공지능 회사에서 백엔드 개발자로 입사하고 1년 2개월 근무를 했습니다.
+현재는 JSP, 자바 스프링에 관심이 생겨서 한국폴리텍 대학에서 교육을 받는 중입니다.
+                </p>
+
+                <h4 style="margin-bottom:0px; margin-top:10px;">Personality</h4>
+                <p  style="margin-top:0px;">
+                  다양한 프로젝트에서 가장 도움이 많이 되었던 것은 다름이 아니라 저의 꾸준함과 성실함이었습니다. 일을 주면 저는 계획적으로 일을 차근차근 해결하려는 습관이 있습니다.
+                  이러한 저의 장점은 특히 팀워크가 많이 필요한 업무에서 더욱 빛을 발합니다. 약속한 시각대로 업무를 책임감 있게 마무리해서 팀 단위 프로젝트에 이슈 발생을 줄입니다.
+                  반대로 저의 단점은 목표가 없으면 조금 나태해지는 경향이 있습니다. 그래서 이 단점을 보완하기 위해 작은 목표라도 매일 정하는 습관을 기르고 있습니다.
+                </p>
+
+                  <h4 style="margin-bottom:0px; margin-top:10px;">Links</h4>
+                  <div class="social-icons">
+                     <a class="social-icon" href="https://www.youtube.com/channel/UC71kfEJOuSI7aK0CmdXn-0Q"><i class="fab fa-youtube"></i></a>
+                     <a class="social-icon" href="https://github.com/hmchung2"><i class="fab fa-github"></i></a>
+                     <a class="social-icon" href="https://hmchung2devjava.tistory.com/"> <img src="images/tistory.png" style="width:20px; height:20px;"></a>
+                 </div>
+
+
        	  	  </div>
        	  </div>
        </div>
@@ -83,50 +167,9 @@
   <!-- Start Service -->
     <section class="services" id="services">
     	<div class="container">
-    		 <h2 class="title">서버 및 분석 능력</h2>
+    		 <h2 class="title">사용 기술</h2>
     		 <div class="services-content">
-           <div class="card">
-              <div class="box">
-                  <div class="icon">
-                     <span class="fa fa-code-fork"></span>
-                  </div>
-                  <h3>구성한 빅데이터 플랫폼</h3>
-                  <ul>
-                    <li class="hmServ">도커 컨테이터 생성 </li>
-                    <i class="arrowdown"></i>
-                    <li class ="hmServ">가상 로그 데이터 자바로 생성</li>
-                    <i class="arrowdown"></i>
-                    <li class ="hmServ">플룸 에이전트 <br/>
-                  (producer -> Kafka topic -> consumer)</li>
-                    <i class="arrowdown"></i>
-                    <li class ="hmServ">HDFS/HBASE </li>
 
-                    <i class ="arrowdown"></i>
-
-                    <li class="hmServ">스파크</li>
-
-                  </ul>
-              </div>
-           </div>
-           <div class="card">
-              <div class="box">
-                  <div class="icon">
-                     <span class="fa fa-laptop"></span>
-                  </div>
-                  <h3>머신러닝 알고리즘</h3>
-                  <p>KNN, K-mean clustering, Market Basket Analysis, Decision Tree, Random Forest, Gradient Boosting, XGBoost</p>
-              </div>
-           </div>
-
-           <div class="card">
-             <div class="box">
-    		 	 	  	  <div class="icon">
-    		 	 	  	  	 <span class="fa fa-bar-chart"></span>
-    		 	 	  	  </div>
-    		 	 	  	  <h3>통계 분석</h3>
-    		 	 	  	  <p>Maximum Likelihood Estimation, PCA, Time Series, Clusering analysis, Logistic Regression, Anova, T-Test, Chi-Square, Correlation</p>
-    		 	 	  </div>
-    		 	 </div>
           <div class="card">
              <div class="box">
                  <div class="icon">
@@ -138,29 +181,94 @@
                    <li class="hmdatabase">Oracle </li>
                    <li class="hmdatabase">MySQL </li>
                    <li class="hmdatabase">ELK </li>
-                   <li class="hmdatabase">SQLite </li>
+                   <li class="hmdatabase">HDFS </li>
                    <li class="hmdatabase">HBase  </li>
-
                    </ul>
                  </p>
              </div>
           </div>
+
           <div class="card">
-            <div class="box">
-                <div class="icon">
-                   <span class="fa fa-table"></span>
-                </div>
-                <h3>전처리용 패키지</h3>
-                <p>
-                 <ul>
-                   <li class="hmpackage"> R: ggplot2, dplyr, tidyverse, tidyr</li>
-                   <li class="hmpackage"> python: pandas, numpy, matlab, dfploy </li>
-
-                 </ul>
+             <div class="box">
+                 <div class="icon">
+                    <span class="fas fa-project-diagram"></span>
+                 </div>
+                 <h3>웹 프레임워크</h3>
+                 <p>
+                   <ul>
+                   <li class="hmdatabase">Servlet </li>
+                   <li class="hmdatabase">Spring </li>
+                   <li class="hmdatabase">Flask </li>
+                   </ul>
                  </p>
-            </div>
-         </div>
+             </div>
+          </div>
 
+          <div class="card">
+             <div class="box">
+                 <div class="icon">
+                    <span class="fas fa-laptop-code"></span>
+                 </div>
+                 <h3>프론트엔드 언어</h3>
+                 <p>
+                   <ul>
+                   <li class="hmdatabase">JSP</li>
+                   <li class="hmdatabase">javascript</li>
+                   <li class="hmdatabase">jquery / AJAX</li>
+                   <li class="hmdatabase">HTML / CSS</li>
+                   </ul>
+                 </p>
+             </div>
+          </div>
+
+          <div class="card">
+             <div class="box">
+                 <div class="icon">
+                    <span class="fas fa-laptop-code"></span>
+                 </div>
+                 <h3>백엔드 언어</h3>
+                 <p>
+                   <ul>
+                   <li class="hmdatabase">JAVA</li>
+                   <li class="hmdatabase">Python </li>
+                   <li class="hmdatabase">R </li>
+                   </ul>
+                 </p>
+             </div>
+          </div>
+
+          <div class="card">
+             <div class="box">
+                 <div class="icon">
+                    <span class="fas fa-network-wired"></span>
+                 </div>
+                 <h3>컨테이너 플랫폼/ OS</h3>
+                 <p>
+                   <ul>
+                   <li class="hmdatabase">Kubernetes</li>
+                   <li class="hmdatabase">Docker</li>
+                   <li class="hmdatabase">Linux (Ubuntu , CentOS , KaliLinux)</li>
+                   <li class="hmdatabase">Windows</li>
+                   </ul>
+                 </p>
+             </div>
+          </div>
+
+          <div class="card">
+             <div class="box">
+                 <div class="icon">
+                    <span class="fas fa-server"></span>
+                 </div>
+                 <h3>웹 서버</h3>
+                 <p>
+                   <ul>
+                   <li class="hmdatabase">Apache-Tomcat</li>
+                   <li class="hmdatabase">AWS</li>
+                   <li class="hmdatabase">nginx</li>
+                   </ul>
+                 </p>
+             </div>
+          </div>
 
 
     		 </div>
@@ -171,79 +279,59 @@
  <!-- Start Skills -->
   <section class="skills" id ="skillez">
   	<div class="container">
-  		 <h2 class="title">Language / OS / Tools  </h2>
+  		 <h2 class="title">언어별 프로그래밍 능력</h2>
   		 <div class="skills-content">
   		 	 <div class="card">
-               <label>Python</label>
-                  <div class="progress" data-text="90%">
-                  	  <div class="inner"  style="width: 90%">
+               <label>JAVA</label>
+                  <div class="progress" data-text="80%">
+                  	  <div class="inner"  style="width: 80%">
                   	  </div>
                   </div>
   		 	 </div>
   		 	 <div class="card">
-               <label>R</label>
-                  <div class="progress" data-text="90%">
-                  	  <div class="inner"  style="width: 90%">
+               <label>Python</label>
+                  <div class="progress" data-text="85%">
+                  	  <div class="inner"  style="width: 85%">
                   	  </div>
                   </div>
   		 	 </div>
          <div class="card">
-               <label>Ubuntu</label>
-                  <div class="progress" data-text="80%">
-                     <div class="inner" style="width: 80%">
+               <label>Javascript</label>
+                  <div class="progress" data-text="75%">
+                  	  <div class="inner"  style="width: 75%">
+                  	  </div>
+                  </div>
+  		 	 </div>
+         <div class="card">
+               <label>HTML/CSS</label>
+                  <div class="progress" data-text="65%">
+                     <div class="inner" style="width: 65%">
                      </div>
                   </div>
         </div>
-        <div class="card">
-              <label>Docker</label>
-                 <div class="progress" data-text="90%">
-                     <div class="inner" style="width: 90%">
-                     </div>
-                 </div>
-        </div>
-  		 	 <div class="card">
-               <label>Java/C</label>
-                  <div class="progress" data-text="50%">
-                  	  <div class="inner"  style="width: 50%">
-                  	  </div>
-                  </div>
-  		 	 </div>
-  		 	 <div class="card">
-               <label>SQL query</label>
-                  <div class="progress" data-text="60%">
-                  	  <div class="inner"  style="width: 60%">
-                  	  </div>
-                  </div>
-  		 	 </div>
-  		 	 <div class="card">
-               <label>html/CSS</label>
-                  <div class="progress" data-text="30%">
-                  	  <div class="inner"  style="width:30%">
-                  	  </div>
-                  </div>
-  		 	 </div>
-  		 	 <div class="card">
-               <label>javascript</label>
-                  <div class="progress" data-text="35%">
-                  	  <div class="inner" style="width: 35%">
-                  	  </div>
-                  </div>
-  		 	 </div>
-
-        <div class="card">
-              <label>Centos</label>
-                 <div class="progress" data-text="70%">
+         <div class="card">
+               <label>SQL</label>
+                  <div class="progress" data-text="70%">
                      <div class="inner" style="width: 70%">
                      </div>
-                 </div>
+                  </div>
         </div>
         <div class="card">
-              <label>php</label>
-                 <div class="progress" data-text="30%">
-                     <div class="inner" style="width: 30%">
+              <label>R</label>
+                 <div class="progress" data-text="50%">
+                     <div class="inner"  style="width: 50%">
                      </div>
                  </div>
         </div>
+        <div class="card">
+              <label>C</label>
+                 <div class="progress" data-text="50%">
+                     <div class="inner" style="width: 50%">
+                     </div>
+                 </div>
+        </div>
+
+
   		 </div>
   	</div>
  </section>
@@ -252,37 +340,41 @@
  <!-- Start Portfolio -->
     <section class="portfolio" id="portfolio">
     	<div class="container">
-    		 <h2 class="title">증명서류</h2>
+    		 <h2 class="title">프로젝트</h2>
     		 <div class="portfolio-content">
-    		 	  <div class="card">
-    		 	  	  <div class="box">
-    		 	  	  	  <h3>UCLA 졸업장</h3>
-                    <a download="portfolio1.jpg" href="C:/portfolio-website-template/images/portfolio1.jpg">
-                    <img src="images/portfolio1.jpg" alt="portfolio"/>
-                  </a>
-                    <h3>한양대 빅데이터 공모전 2위</h3>
-                    <a download="portfolio4.jpg" href="C:/portfolio-website-template/images/portfolio4.jpg">
-                    <img src="images/portfolio4.jpg" alt="portfolio"/>
-                    </a>
-    		 	  	  </div>
-    		 	  </div>
-    		 	  <div class="card">
-    		 	  	  <div class="box">
-    		 	  	  	  <h3>서울시 빅데이터 공모전 우수상 2위</h3>
-                    <a download="portfolio2.jpg" href="C:/portfolio-website-template/images/portfolio2.jpg">
-    		 	  	  	  <img src="images/portfolio2.jpg" alt="portfolio"/>
-                  </a>
-    		 	  	  </div>
-    		 	  </div>
-    		 	  <div class="card">
-    		 	  	  <div class="box">
-    		 	  	  	  <h3>한양대 빅데이터  </br>
-                      분석가 양성과정 수료증</h3>
-                      <a download="portfolio3.jpg" href="C:/portfolio-website-template/images/portfolio3.jpg">
-    		 	  	  	  <img src="images/portfolio3.jpg" alt="portfolio"/>
-                  </a>
-    		 	  	  </div>
-    		 	  </div>
+
+
+           <div class="team-content">
+              <div class="card">
+                  <div class="box">
+                    <a download="https://www.youtube.com/watch?v=LBIXU1WXr8k" href="https://www.youtube.com/watch?v=LBIXU1WXr8k">
+                     <img src="images/bank-home.png" alt="team" />
+                   </a>
+                     <h3>개인 프로젝트 - 오픈뱅킹 웹사이트 개발</h3>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="box">
+                    <a download="objects/fog-detection-program.pdf" href="objects/fog-detection-program.pdf">
+                     <img src="images/fog-det.jpg" alt="team" />
+                   </a>
+                     <h3>사내프로젝트 - 공군기상단 날씨 이상탐지 및 경보 프로그램 개발</h3>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="box">
+                    <a download="objects/seoul-bigdata-compet.pdf" href="objects/seoul-bigdata-compet.pdf">
+                     <img src="images/big-data-compet.png" alt="team" />
+                   </a>
+                     <h3>서울시 빅데이터 공모전 - 공공자전거 분석 (우수상)</h3>
+                  </div>
+              </div>
+
+           </div>
+
+
+
+
 
 
     		 </div>
@@ -293,38 +385,38 @@
  <!-- Start Team -->
    <section class="team" id="team">
    	  <div class="container">
-   	  	  <h2 class="title">빅데이터 공모전 내 역할 요약</h2>
-   	  	   <div class="team-content">
-   	  	   	  <div class="card">
-   	  	   	  	  <div class="box">
-                    <a download="team1.jpg" href="C:/portfolio-website-template/images/team1.jpg">
-   	  	   	  	  	 <img src="images/team1.jpg" alt="team" />
-                   </a>
-   	  	   	  	  	 <h3>정제된 자전거 고장 데이터 전처리 및 분석</h3>
-   	  	   	  	  </div>
-   	  	   	  </div>
-   	  	   	  <div class="card">
-   	  	   	  	  <div class="box">
-                    <a download="team2.jpg" href="C:/portfolio-website-template/images/team2.jpg">
-   	  	   	  	  	 <img src="images/team2.jpg" alt="team" />
-                   </a>
-   	  	   	  	  	 <h3>AWS 서버 구축 (실시간 데이터)</h3>
-
-   	  	   	  	  </div>
-   	  	   	  </div>
-   	  	   	  <div class="card">
-   	  	   	  	  <div class="box">
-                    <a download="team3.jpg" href="C:/portfolio-website-template/images/team3.jpg">
-   	  	   	  	  	 <img src="images/team3.jpg" alt="team" />
-                   </a>
-   	  	   	  	  	 <h3>고장 데이터 시각화 및 수치화</h3>
-   	  	   	  	  </div>
-   	  	   	  </div>
-</br>
-</br>
-           </div>
-</br>
-</br>
+   	  	  <h2 class="title">증명서류</h2>
+          <div class="team-content">
+            <div class="card">
+                <div class="box">
+                    <h3>UCLA 졸업장</h3>
+                    <a download="images/portfolio1.jpg" href="images/portfolio1.jpg">
+                    <img src="images/portfolio1.jpg" alt="portfolio"/>
+                  </a>
+                    <h3>한양대 빅데이터 공모전 2위</h3>
+                    <a download="images/portfolio4.jpg" href="images/portfolio4.jpg">
+                    <img src="images/portfolio4.jpg" alt="portfolio"/>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <h3>서울시 빅데이터 공모전 우수상 2위</h3>
+                    <a download="images/portfolio2.jpg" href="images/portfolio2.jpg">
+                      <img src="images/portfolio2.jpg" alt="portfolio"/>
+                  </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <h3>한양대 빅데이터  </br>
+                      분석가 양성과정 수료증</h3>
+                      <a download="images/portfolio3.jpg" href="images/portfolio3.jpg">
+                    <img src="images/portfolio3.jpg" alt="portfolio"/>
+                  </a>
+                </div>
+            </div>
+          </div>
    	  </div>
    </section>
  <!-- End Team -->
@@ -350,8 +442,16 @@
    	  	  	  	  <h4>Eamil</h4>
    	  	  	  	  <p>hmchung2@gmail.com</p>
    	  	  	  </div>
-</br>
-</br>
+
+
+                    <div class="social-icons">
+                       <a class="social-icon" href="https://www.youtube.com/channel/UC71kfEJOuSI7aK0CmdXn-0Q"><i class="fab fa-youtube"></i></a>
+                       <a class="social-icon" href="https://github.com/hmchung2"><i class="fab fa-github"></i></a>
+                       <a class="social-icon" href="https://hmchung2devjava.tistory.com/"> <img src="images/tistory.png" style="width:20px; height:20px;"></a>
+                   </div>
+
+
+
    	  	  </div>
 
    	  </div>
